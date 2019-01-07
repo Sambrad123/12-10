@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Activity 3 SHEENA ANN AMBRAD</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<label>Enter Grade:</label>
+		<input type="text" name="grade">
+		<input type="button" value="GO!" onclick="search()">
+		<p>65-74:POOR</p>
+		<p>75-79:NICE</p>
+		<p>80-84:GOOD</p>
+		<p>85-94:VERY GOOD</p>
+		<p>95-98:EXCELLENT</p>
+		<h3>Grade Bracket belong to:</h3>
+		<h3 id="result">
+	</div>
+<script type="text/javascript">
+	funtion search()
+	{
+		var grade=Number(document.getElementById('grade').value)
+			if (isNaN('grade')==false) 
+			var bracket="result"
+			{
+				if(grade>94)
+				{
+					document.getElementById('result').innerHTML="EXCELLENT";
+				}
+				else if(grade>84)
+				{
+					document.getElementById('result').innerHTML="VERY GOOD";
+				}
+				else if(grade>79)
+				{
+					document.getElementById('result').innerHTML="GOOD";
+				}
+				else if(grade>74)
+				{
+					document.getElementById('result').innerHTML="NICE";
+				}
+				else if(grade<75)
+				{
+					document.getElementById('result').innerHTML="POOR";
+				}
+				else
+				{
+					document.getElementById('result').innerHTML="INVALID VALUE";
+				}
+
+			}
+	}
+</script>
+</body>
+</html>
