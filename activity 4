@@ -26,4 +26,4 @@ function test ()
      }
      alert("ENJOY YOUR COFEE" + "Your change is" + (x-50))                        
    }                             
-                               
+   </body>                           
